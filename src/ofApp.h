@@ -22,10 +22,6 @@ public:
 	void gotMessage(ofMessage msg);
 		
 private:
-	ofMesh triangle;
+	ofMesh quad;
 	ofShader shader;
-
-	float r;
-	float g;
-	float b;
 };
