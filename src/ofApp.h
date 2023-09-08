@@ -24,4 +24,8 @@ public:
 private:
 	ofMesh triangle;
 	ofShader shader;
+
+	float r;
+	float g;
+	float b;
 };
