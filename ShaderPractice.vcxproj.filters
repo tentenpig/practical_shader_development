@@ -31,5 +31,11 @@
     <None Include="bin\data\first_vertex.vert">
       <Filter>shaders</Filter>
     </None>
+    <None Include="bin\data\uv_passthrough.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="bin\data\uv_vis.frag">
+      <Filter>shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>

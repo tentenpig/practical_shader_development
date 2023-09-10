@@ -6,16 +6,16 @@ void ofApp::setup(){
 	quad.addVertex(glm::vec3(-1, 1, 0));
 	quad.addVertex(glm::vec3(1, 1, 0));
 	quad.addVertex(glm::vec3(1, -1, 0));
-	
-	quad.addColor(ofFloatColor(1.0f, 0.0f, 0.0f, 1.0f));
-	quad.addColor(ofFloatColor(0.0f, 1.0f, 0.0f, 1.0f));
-	quad.addColor(ofFloatColor(0.0f, 0.0f, 1.0f, 1.0f));
-	quad.addColor(ofFloatColor(1.0f, 1.0f, 1.0f, 1.0f));
 
 	ofIndexType indices[6] = { 0, 1, 2, 2, 3, 0 };
 	quad.addIndices(indices, 6);
 
-	shader.load("first_vertex.vert", "first_fragment.frag");
+	quad.addTexCoord(glm::vec2(0, 0));
+	quad.addTexCoord(glm::vec2(0, 1));
+	quad.addTexCoord(glm::vec2(1, 1));
+	quad.addTexCoord(glm::vec2(1, 0));
+
+	shader.load("uv_passthrough.vert", "uv_vis.frag");
 }
 
 //--------------------------------------------------------------
