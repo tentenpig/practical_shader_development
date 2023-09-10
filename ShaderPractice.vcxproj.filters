@@ -15,6 +15,12 @@
     <Filter Include="shaders">
       <UniqueIdentifier>{0ba63ab5-d6e7-4e2c-9690-0081e98cc60e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="shaders\vert">
+      <UniqueIdentifier>{e29dafec-4220-43fb-af23-3b586b7e0a14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\frag">
+      <UniqueIdentifier>{49287638-6811-4be7-bcf4-d83fd46e4373}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ofApp.h">
@@ -25,28 +31,23 @@
     <ResourceCompile Include="icon.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\data\first_fragment.frag">
-      <Filter>shaders</Filter>
-    </None>
     <None Include="bin\data\first_vertex.vert">
-      <Filter>shaders</Filter>
-    </None>
-    <None Include="bin\data\uv_passthrough.vert">
-      <Filter>shaders</Filter>
-    </None>
-    <None Include="bin\data\uv_vis.frag">
-      <Filter>shaders</Filter>
+      <Filter>shaders\vert</Filter>
     </None>
     <None Include="bin\data\scrolling_uv.vert">
-      <Filter>shaders</Filter>
+      <Filter>shaders\vert</Filter>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="bin\data\checker.jpg">
-      <Filter>shaders</Filter>
-    </Image>
-    <Image Include="bin\data\parrot.png">
-      <Filter>shaders</Filter>
-    </Image>
+    <None Include="bin\data\uv_passthrough.vert">
+      <Filter>shaders\vert</Filter>
+    </None>
+    <None Include="bin\data\first_fragment.frag">
+      <Filter>shaders\frag</Filter>
+    </None>
+    <None Include="bin\data\brightness.frag">
+      <Filter>shaders\frag</Filter>
+    </None>
+    <None Include="bin\data\uv_vis.frag">
+      <Filter>shaders\frag</Filter>
+    </None>
   </ItemGroup>
 </Project>

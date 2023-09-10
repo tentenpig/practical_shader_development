@@ -15,7 +15,7 @@ void ofApp::setup(){
 	quad.addTexCoord(glm::vec2(1, 1));
 	quad.addTexCoord(glm::vec2(1, 0));
 
-	shader.load("shader/vert/scrolling_uv.vert", "shader/frag/uv_vis.frag");
+	shader.load("shader/vert/uv_passthrough.vert", "shader/frag/brightness.frag");
 
 	ofDisableArbTex();
 	img.load("textures/parrot.png");
@@ -30,7 +30,6 @@ void ofApp::update(){
 void ofApp::draw(){
 	shader.begin();
 	shader.setUniformTexture("parrotTex", img, 0);
-	shader.setUniform1f("time", ofGetElapsedTimef());
 	quad.draw();
 	shader.end();
 }
