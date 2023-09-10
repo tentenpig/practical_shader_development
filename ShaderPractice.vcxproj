@@ -204,6 +204,10 @@
     <None Include="bin\data\uv_passthrough.vert" />
     <None Include="bin\data\uv_vis.frag" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="bin\data\checker.jpg" />
+    <Image Include="bin\data\parrot.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ProjectExtensions>
     <VisualStudio>

@@ -38,4 +38,12 @@
       <Filter>shaders</Filter>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="bin\data\checker.jpg">
+      <Filter>shaders</Filter>
+    </Image>
+    <Image Include="bin\data\parrot.png">
+      <Filter>shaders</Filter>
+    </Image>
+  </ItemGroup>
 </Project>
