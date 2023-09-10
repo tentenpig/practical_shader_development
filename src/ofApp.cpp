@@ -15,10 +15,11 @@ void ofApp::setup(){
 	quad.addTexCoord(glm::vec2(1, 1));
 	quad.addTexCoord(glm::vec2(1, 0));
 
-	shader.load("uv_passthrough.vert", "uv_vis.frag");
+	shader.load("scrolling_uv.vert", "uv_vis.frag");
 
-	ofDisableArbTex();  // 현재 쓰지 않은 오픈프레임워스의 기능을 해제 해 주는 함수
+	ofDisableArbTex();
 	img.load("parrot.png");
+	img.getTexture().setTextureWrap(GL_REPEAT, GL_REPEAT);
 }
 
 //--------------------------------------------------------------
@@ -28,8 +29,8 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
 	shader.begin();
-	// 셰이더의 유니폼 변수에 텍스쳐를 지정 해 준다
 	shader.setUniformTexture("parrotTex", img, 0);
+	shader.setUniform1f("time", ofGetElapsedTimef());
 	quad.draw();
 	shader.end();
 }
