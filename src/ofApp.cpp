@@ -15,10 +15,10 @@ void ofApp::setup(){
 	quad.addTexCoord(glm::vec2(1, 1));
 	quad.addTexCoord(glm::vec2(1, 0));
 
-	shader.load("scrolling_uv.vert", "uv_vis.frag");
+	shader.load("shader/vert/scrolling_uv.vert", "shader/frag/uv_vis.frag");
 
 	ofDisableArbTex();
-	img.load("parrot.png");
+	img.load("textures/parrot.png");
 	img.getTexture().setTextureWrap(GL_REPEAT, GL_REPEAT);
 }
 
