@@ -31,22 +31,34 @@
     <ResourceCompile Include="icon.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\data\first_vertex.vert">
-      <Filter>shaders\vert</Filter>
-    </None>
-    <None Include="bin\data\scrolling_uv.vert">
-      <Filter>shaders\vert</Filter>
-    </None>
-    <None Include="bin\data\uv_passthrough.vert">
-      <Filter>shaders\vert</Filter>
-    </None>
-    <None Include="bin\data\first_fragment.frag">
-      <Filter>shaders\frag</Filter>
-    </None>
     <None Include="bin\data\brightness.frag">
       <Filter>shaders\frag</Filter>
     </None>
-    <None Include="bin\data\uv_vis.frag">
+    <None Include="bin\data\shader\vert\quater.vert">
+      <Filter>shaders\vert</Filter>
+    </None>
+    <None Include="bin\data\shader\vert\first_vertex.vert">
+      <Filter>shaders\vert</Filter>
+    </None>
+    <None Include="bin\data\shader\vert\scrolling_uv.vert">
+      <Filter>shaders\vert</Filter>
+    </None>
+    <None Include="bin\data\shader\vert\uv_passthrough.vert">
+      <Filter>shaders\vert</Filter>
+    </None>
+    <None Include="bin\data\shader\frag\first_fragment.frag">
+      <Filter>shaders\frag</Filter>
+    </None>
+    <None Include="bin\data\shader\frag\uv_vis.frag">
+      <Filter>shaders\frag</Filter>
+    </None>
+    <None Include="bin\data\shader\frag\quater_colorize.frag">
+      <Filter>shaders\frag</Filter>
+    </None>
+    <None Include="bin\data\shader\frag\mad.frag">
+      <Filter>shaders\frag</Filter>
+    </None>
+    <None Include="bin\data\shader\frag\mix.frag">
       <Filter>shaders\frag</Filter>
     </None>
   </ItemGroup>

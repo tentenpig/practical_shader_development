@@ -24,5 +24,6 @@ public:
 private:
 	ofMesh quad;
 	ofShader shader;
-	ofImage img;	// ÀÌ¹ÌÁö
+	ofImage imgParrot;
+	ofImage imgChecker;
 };

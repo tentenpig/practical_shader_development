@@ -15,11 +15,13 @@ void ofApp::setup(){
 	quad.addTexCoord(glm::vec2(1, 1));
 	quad.addTexCoord(glm::vec2(1, 0));
 
-	shader.load("shader/vert/uv_passthrough.vert", "shader/frag/brightness.frag");
+	shader.load("shader/vert/uv_passthrough.vert", "shader/frag/mad.frag");
 
 	ofDisableArbTex();
-	img.load("textures/parrot.png");
-	img.getTexture().setTextureWrap(GL_REPEAT, GL_REPEAT);
+	imgChecker.load("textures/checker.jpg");
+	imgChecker.getTexture().setTextureWrap(GL_REPEAT, GL_REPEAT);
+	imgParrot.load("textures/parrot.png");
+	imgParrot.getTexture().setTextureWrap(GL_REPEAT, GL_REPEAT);
 }
 
 //--------------------------------------------------------------
@@ -29,7 +31,8 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
 	shader.begin();
-	shader.setUniformTexture("parrotTex", img, 0);
+	shader.setUniformTexture("parrotTex", imgParrot, 0);
+	shader.setUniformTexture("checkerTex", imgChecker, 0);
 	quad.draw();
 	shader.end();
 }
