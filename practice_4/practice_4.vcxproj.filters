@@ -1,24 +1,58 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<ItemGroup>
-		<ClCompile Include="src\ofApp.cpp">
-			<Filter>src</Filter>
-		</ClCompile>
-		<ClCompile Include="src\main.cpp">
-			<Filter>src</Filter>
-		</ClCompile>
-	</ItemGroup>
-	<ItemGroup>
-		<Filter Include="src">
-			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
-		</Filter>
-	</ItemGroup>
-	<ItemGroup>
-		<ClInclude Include="src\ofApp.h">
-			<Filter>src</Filter>
-		</ClInclude>
-	</ItemGroup>
-	<ItemGroup>
-		<ResourceCompile Include="icon.rc" />
-	</ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shader">
+      <UniqueIdentifier>{01d390ba-1dd3-43e4-a256-669117132fb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shader\frag">
+      <UniqueIdentifier>{883097c3-4274-470d-8ca7-13e1c898ea9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shader\vert">
+      <UniqueIdentifier>{cd659c67-674d-4d65-bfbb-cbd7142c41e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="textures">
+      <UniqueIdentifier>{cf2b2b2f-9968-4fff-8bb9-27998183ab12}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="bin\data\textures\alien.png">
+      <Filter>textures</Filter>
+    </Image>
+    <Image Include="bin\data\textures\cloud.png">
+      <Filter>textures</Filter>
+    </Image>
+    <Image Include="bin\data\textures\forest.png">
+      <Filter>textures</Filter>
+    </Image>
+    <Image Include="bin\data\textures\sun.png">
+      <Filter>textures</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\data\shader\frag\mix.frag">
+      <Filter>shader\frag</Filter>
+    </None>
+    <None Include="bin\data\shader\vert\uv_passthrough.vert">
+      <Filter>shader\vert</Filter>
+    </None>
+  </ItemGroup>
 </Project>

@@ -150,3 +150,15 @@ bin/ShaderPractice_debug.exp
 bin/ShaderPractice_debug.lib
 bin/ShaderPractice_debug.pdb
 bin/data/.gitkeep
+practice_4/.vs/practice_4/v16/Browse.VC.db-shm
+practice_4/.vs/practice_4/v16/Browse.VC.db-wal
+practice_4/.vs/practice_4/v16/Browse.VC.opendb
+practice_4/.vs/practice_4/v16/Solution.VC.db-shm
+practice_4/.vs/practice_4/v16/Solution.VC.db-wal
+practice_4/bin/fmodex.dll
+practice_4/bin/fmodexL.dll
+practice_4/bin/FreeImage.dll
+practice_4/bin/practice_4_debug.exe
+practice_4/bin/practice_4_debug.exp
+practice_4/bin/practice_4_debug.lib
+practice_4/bin/practice_4_debug.pdb
