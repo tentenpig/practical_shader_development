@@ -10,6 +10,5 @@ void main()
 {
 	vec4 parrot = texture(parrotTex, fragUV);
 	vec4 checker = texture(checkerTex, fragUV);
-	// outCol = mix(parrot, checker, 1);
-	outCol = parrot;
+	outCol = mix(parrot, checker, 0.5);
 }
